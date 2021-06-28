@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-header {
-  /* background-color: yellowgreen; */
-  min-height: 100vh;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -19,12 +14,10 @@ nav {
 }
 
 .logo {
-  /* width: 100px; */
   color: rgb(226, 226, 226);
   text-transform: uppercase;
   font-size: 20px;
   padding: 1em;
-  /* padding-right: 3rem; */
   font-family: "Courgette", "cursive";
   letter-spacing: 4px;
 }
@@ -35,19 +28,16 @@ nav {
 
 .nav-links {
   display: flex;
-  /* background-color: red; */
   justify-content: space-around;
 }
 
 .nav-links li {
   list-style-type: none;
-  /* padding: 1rem; */
 }
 
 .nav-links a {
   color: rgb(226, 226, 226);
   text-decoration: none;
-  /* letter-spacing: 2px; */
   text-transform: uppercase;
   font-size: 15px;
   float: left;
@@ -75,12 +65,6 @@ nav {
   transition: all 0.6s ease;
 }
 
-/* @media screen and (max-width: 1120px) {
-  .nav-links {
-    width: 70%;
-  }
-} */
-
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 100%;
@@ -105,7 +89,6 @@ nav {
   body {
     overflow-x: hidden;
     overflow: hidden;
-    /* height: 60vh; */
   }
   .nav-links {
     position: absolute;
@@ -117,8 +100,6 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* width: 40%; */
-    /* width: 60%; */
     transform: translateX(100%);
     transition: transform 0.4s ease-in;
   }
@@ -160,4 +141,34 @@ nav {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* main section */
+.main {
+  min-height: 100vh;
+  background-image: url(../images/bakgrund-hemsida.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hem-profil {
+  border-radius: 4px;
+  width: 200px;
+  height: 200px;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  z-index: -1;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
