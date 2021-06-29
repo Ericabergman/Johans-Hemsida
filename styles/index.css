@@ -4,6 +4,72 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bakgrund-hemsida.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-top: 9em;
+  width: 1000px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #112128;
+}
+
+.container .card {
+  max-width: 1000px;
+  background-color: pink;
+  height: 300px;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+}
+
+.container .card .imgBx {
+  max-width: 150px;
+  flex: 0 0 150px;
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+}
+
+.container .card .content {
+  margin-left: 20px;
+}
+
+.card_subtext {
+  padding: 1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 300px;
+  }
+}
+/* canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -11,6 +77,7 @@ nav {
   min-height: 10vh;
   background-color: steelblue;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 .logo {
@@ -143,12 +210,29 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.title {
+  text-align: center;
+}
+
 /* main section */
-.main {
-  min-height: 100vh;
-  background-image: url(../images/bakgrund-hemsida.png);
-  background-position: center;
-  background-repeat: no-repeat;
+main {
+  margin-top: 1em;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.main_content {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.heading {
+  text-align: center;
+  z-index: 1;
 }
 
 .hem-profil {
@@ -157,18 +241,27 @@ nav {
   height: 200px;
 }
 
-body {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  z-index: -1;
+.main_content_second_container {
+  width: 1000px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.main_text_second {
+  color: #000;
+  background-color: rgb(226, 226, 226);
+  padding: 1rem;
+  text-align: center;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2em;
+  border-radius: 4px;
+  box-shadow: 5px 5px 2px rgb(226, 226, 226);
+}
+
+.main_content_second_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
 }
