@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
-header {
-  min-height: 100vh;
+body {
+  font-family: "poppins", sans-serif;
 }
 
+/* NAV STARTS */
+/* ------------------------------------ */
 nav {
   display: flex;
   justify-content: space-around;
@@ -92,26 +94,29 @@ nav {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+    overflow: hidden;
   }
+
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 10.3vh;
-    background-color: lightgray;
+    height: 90vh;
+    top: 10.2vh;
+    /* background-color: lightgray; */
+    background-color: steelblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     transform: translateX(100%);
-    transition: transform 0.4s ease-in;
+    /* transition: transform 0.4s ease-in; */
   }
   .nav-links li {
     opacity: 0;
   }
 
   .nav-links a {
-    color: darkblue;
+    color: pink;
   }
 
   .burger {
@@ -144,4 +149,89 @@ nav {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* main section */
+
+main {
+  margin-top: 1em;
+  /* margin: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.offers-lectures_img {
+  width: 400px;
+  /* height:200px ; */
+}
+
+.container {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 55vh;
+  background-color: #112128;
+  z-index: -1;
+  /* margin-top: 9em; */
+}
+
+.container .card {
+  position: relative;
+  z-index: -1;
+  /* max-width: 450px; */
+  /* max-width: 1000px; */
+  /* min-height: 300px; */
+  background-color: pink;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+}
+
+.container .card .imgBx {
+  max-width: 150px;
+  flex: 0 0 150px;
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+  /* width: 400px; */
+}
+
+.container .card .content_offers-lectures {
+  margin-left: 20px;
+}
+
+.card_subtext {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .card {
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .container .card .imgBx {
+    max-width: 100%;
+  }
+  .container .card .content_offers-lectures {
+    margin-left: 0;
+  }
 }
