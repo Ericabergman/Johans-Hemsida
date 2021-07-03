@@ -334,10 +334,13 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  min-height: 90vh;
 }
 
 .subtitle-contact-me {
-  padding: 40px;
+  /* padding: 40px; */
+  letter-spacing: 0.5em;
+  font-family: "";
 }
 
 .text-content {

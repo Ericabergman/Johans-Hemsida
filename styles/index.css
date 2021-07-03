@@ -19,8 +19,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  /* background-color: steelblue; */
-  background: #112128;
+  background-color: steelblue;
   font-family: "Poppins", sans-serif;
   position: relative;
 }
