@@ -19,8 +19,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: steelblue;
-  /* background: #112128; */
+  /* background-color: steelblue; */
+  background: #112128;
   font-family: "Poppins", sans-serif;
   position: relative;
 }
@@ -189,12 +189,12 @@ main {
 .container .card {
   position: relative;
   z-index: -1;
-  /* max-width: 450px; */
-  /* min-height: 300px; */
-  background-color: pink;
+  background-color: white;
   margin: 10px;
   padding: 15px;
   display: flex;
+  /* max-width: 450px; */
+  /* min-height: 300px; */
 }
 
 .container .card .imgBx {

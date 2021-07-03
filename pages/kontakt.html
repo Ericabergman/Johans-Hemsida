@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/995d6de43e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/kontakt.css">
 
@@ -13,8 +14,9 @@
 </head>
 
 <body>
+    <!----------------------- HEADER STARTS ------------------>
     <header>
-        <!-- navigation start  -->
+        <!------------------ NAVIGATION STARTS ------------------->
         <nav>
             <div class="logo">
                 <h4 id="#nav-hem">J.Forsmark</h4>
@@ -37,13 +39,94 @@
                 <div class="line3"></div>
             </div>
             <!-- btn for open close navbar when the screen gets smaller-->
-        </nav><!-- navigation ends -->
-        <h1 class="title">Johan Forsmark</h1>
-        <h2>Kontakt</h2>
+        </nav>
+        <!-------------- navigation ends ---------------------->
     </header>
-    <!-- header ends -->
-    <!-- <main> -->
-    <!-- </main> -->
+    <!------------------------ header ends -------------------------->
+    <main>
+        <!------------------- SECTION TEXT STARTS ------------------->
+        <section class="text-container">
+            <h2 class="subtitle-contact-me">Kontakta mig</h2>
+            <div class="text-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, voluptates aliquam eum accusamus
+                    ratione ducimus esse neque. Perferendis amet suscipit aut, minima non autem tempore modi quis dolore
+                    voluptates! Dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint ipsam fugit,
+                    incidunt ab aperiam, omnis, rem officiis nulla corrupti minus quisquam accusamus. Praesentium
+                    asperiores dolorem at autem voluptatibus ullam? Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nesciunt quaerat reprehenderit nisi qui sit velit! Nobis accusantium animi quam quis expedita
+                    libero quas, repellendus asperiores nam sapiente labore non quod. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Eveniet, voluptates aliquam eum accusamus
+                    ratione ducimus esse neque.
+                </p>
+            </div>
+            <a href="#contact me" class="contact_me">För att kontakta mig..
+                <div class="container-icon">
+                    <i class="fas fa-chevron-down" id="contact me.."></i>
+                </div>
+            </a>
+        </section>
+        <!--------------------- SECTION TEXT ENDS ------------------------------>
+        <!--------------------- SECTION FORM STARTS ---------------------------->
+        <section class="form-section" id="contact me">
+            <div class="container">
+                <form action="https://formspree.io/f/mjvjorlw" method="POST">
+                    <h2>Glassmorphism Contact Us Form</h2>
+                    <div class="row100">
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="firstName" required>
+                                <span class="text">Förnamn</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="lastName" required>
+                                <span class="text">Efternamn</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="email" required>
+                                <span class="text">Email</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="phone" required>
+                                <span class="text">Mobil</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox textarea">
+                                <textarea cols="30" rows="10" name="message" required></textarea>
+                                <span class="text">Skriv ditt meddelande här..</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <input type="Submit" value="skicka">
+                        </div>
+                    </div>
+                    <div id="status"></div>
+                </form>
+            </div>
+        </section>
+        <!--------------------- SECTION FORM ENDS ------------------------->
+    </main>
     <script src="../script.js"></script>
 
 </body>
