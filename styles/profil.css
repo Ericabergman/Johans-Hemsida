@@ -4,8 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+}
+
 header {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+}
+
+main {
+  background-image: url(../images/background-image-contact.png);
+  background-position: center;
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
 }
 
 nav {
