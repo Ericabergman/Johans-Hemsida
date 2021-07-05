@@ -30,6 +30,14 @@ nav {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: mediumblue;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;

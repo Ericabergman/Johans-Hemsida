@@ -35,6 +35,15 @@ nav {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: midnightblue;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
