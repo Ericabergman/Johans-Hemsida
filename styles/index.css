@@ -106,7 +106,6 @@ nav {
     right: 0px;
     height: 90vh;
     top: 10.2vh;
-    /* background-color: lightgray; */
     background-color: steelblue;
     display: flex;
     flex-direction: column;
@@ -159,19 +158,17 @@ nav {
 .title {
   text-align: center;
 }
-
+/* ------------------------------------------- MAIN CONTENT STARTS ----------------------------------------- */
 /* main section */
-
-main {
+/* main {
   margin-top: 1em;
-  /* margin: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 70vh;
-}
+} */
 
-.container {
+/* .container {
   position: relative;
   width: 1000px;
   display: flex;
@@ -181,19 +178,15 @@ main {
   min-height: 45vh;
   background: #112128;
   z-index: -1;
-  /* margin-top: 5em; */
-  /* min-height: 70vh; */
-}
+} */
 
-.container .card {
+/* .container .card {
   position: relative;
   z-index: -1;
   background-color: white;
   margin: 10px;
   padding: 15px;
   display: flex;
-  /* max-width: 450px; */
-  /* min-height: 300px; */
 }
 
 .container .card .imgBx {
@@ -237,4 +230,6 @@ main {
   .container .card .content {
     margin-left: 0;
   }
-}
+} */
+
+/* --------------------------------- MAIN CONTENT ENDS --------------------------------*/
