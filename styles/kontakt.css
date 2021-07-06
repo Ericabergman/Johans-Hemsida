@@ -439,12 +439,15 @@ section {
 
 .subtitle-contact-me {
   letter-spacing: 0.5em;
-  font-family: "";
 }
 
 .text-content {
   padding: 50px;
   background: rgba(255, 255, 255, 0.25);
+}
+
+.text-content_subtext {
+  font-size: 30px;
 }
 
 .fa-chevron-down {
