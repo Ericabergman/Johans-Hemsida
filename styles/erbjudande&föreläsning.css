@@ -102,7 +102,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .nav-links {

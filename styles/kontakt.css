@@ -105,13 +105,16 @@ a:hover {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+    /* overflow: hidden; */
   }
   .nav-links {
     position: absolute;
+    z-index: 1;
     right: 0px;
     height: 92vh;
     top: 10.3vh;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-color: steelblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +127,7 @@ a:hover {
   }
 
   .nav-links a {
-    color: darkblue;
+    color: pink;
   }
 
   .burger {
