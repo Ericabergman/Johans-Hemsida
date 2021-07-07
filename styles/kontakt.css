@@ -453,6 +453,10 @@ section {
   font-size: 30px;
 }
 
+.temporary-text {
+  text-align: center;
+}
+
 .fa-chevron-down {
   cursor: pointer;
   border-radius: 50%;

@@ -3,20 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* background-image: url(../images/background-image-profil.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column; */
-body {
-  /* background-image: url(../images/background-image-profil.png);
-  background-repeat: no-repeat; */
-  /* background-position: center; */
-  /* background-size: cover; */
-  /* background-size: 100%; */
-  /* min-height: 170vh; */
-  /* min-height: 100vh; */
-}
 
 nav {
   display: flex;
