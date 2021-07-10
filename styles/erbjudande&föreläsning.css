@@ -169,8 +169,19 @@ main {
   /* min-height: 100vh; */
 }
 
+h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+
 .offers-lectures_img {
   width: 400px;
+}
+
+.temporary-text {
+  text-align: center;
+  padding: 3em;
+  font-weight: bolder;
 }
 
 .container {
@@ -219,6 +230,16 @@ main {
   .container {
     flex-direction: column;
   }
+
+  h1 {
+    text-align: center;
+  }
+
+  .temporary-text {
+    font-size: 15px;
+    text-align: center;
+    padding: 1em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -237,6 +258,12 @@ main {
   .container .card .content_offers-lectures {
     margin-left: 0;
   }
+  .temporary-text {
+    font-size: 15px;
+    font-size: 2vw;
+    text-align: center;
+    padding: 2em;
+  }
 }
 
 .subtitle-offers-lectures {
@@ -248,9 +275,7 @@ main {
 }
 
 .first-subtitle-offers-lectures {
-  font-size: 20px;
+  font-size: 2vw;
   padding: 1em;
-}
-
-.third-subtitle {
+  text-align: center;
 }
