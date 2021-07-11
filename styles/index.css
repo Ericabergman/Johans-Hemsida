@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url(../images/bakgrund-hemsida.png);
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: 100%;
 }
 
