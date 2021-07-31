@@ -178,10 +178,16 @@ h1 {
   width: 400px;
 }
 
+.content_offers-lectures-temporary-text {
+  /* max-width: 500px; */
+  text-align: center;
+}
+
 .temporary-text {
   text-align: center;
   padding: 3em;
   font-weight: bolder;
+  font-size: 2vw;
 }
 
 .container {
@@ -196,6 +202,12 @@ h1 {
   z-index: -1;
   /* margin-top: 9em; */
 }
+
+/* .temporary-text {
+  font-size: 3vw;
+  text-align: center;
+  padding: 2em;
+} */
 
 .container .card {
   position: relative;
@@ -235,11 +247,11 @@ h1 {
     text-align: center;
   }
 
-  .temporary-text {
-    font-size: 15px;
+  /* .temporary-text {
+    font-size: 3vw;
     text-align: center;
     padding: 1em;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -258,11 +270,11 @@ h1 {
   .container .card .content_offers-lectures {
     margin-left: 0;
   }
+}
+
+@media (max-width: 400px) {
   .temporary-text {
-    font-size: 15px;
-    font-size: 2vw;
-    text-align: center;
-    padding: 2em;
+    font-size: 10px;
   }
 }
 
