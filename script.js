@@ -17,7 +17,7 @@ const navSlide = () => {
         }s`;
       }
     });
-    //burger animation
+    // burger animation
     burger.classList.toggle("toggle");
   });
 };
@@ -27,7 +27,6 @@ navSlide();
 // --------------------------------------------------
 
 // CONTACT PAGE
-
 window.addEventListener("DOMContentLoaded", function () {
   // get the form elements defined in your form HTML above
 

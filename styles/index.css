@@ -2,14 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.2s linear;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(../images/bakgrund-hemsida.png);
   background-position: center;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: 100%;
+  min-height: 700px;
+  overflow-x: hidden;
 }
 
 /* NAV STARTS */
@@ -74,61 +77,6 @@ nav {
   background-color: rgb(226, 226, 226);
   margin: 5px;
   transition: all 0.6s ease;
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .logo {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    overflow: hidden;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-  }
-
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 90vh;
-    top: 10.2vh;
-    background-color: steelblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-
-    /* transition: transform 0.4s ease-in; */
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .nav-links a {
-    color: pink;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
 }
 
 @keyframes navLinksFade {
@@ -232,3 +180,55 @@ nav {
 } */
 
 /* --------------------------------- MAIN CONTENT ENDS --------------------------------*/
+
+/* MEDIA  QUERIES */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    overflow: hidden;
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    /* right: 0px; */
+    left: -100%;
+    height: 90vh;
+    top: 10.2vh;
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* transform: translateX(100%); */
+    /* transition: transform 0.4s ease-in; */
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links a {
+    color: pink;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  left: 0;
+}

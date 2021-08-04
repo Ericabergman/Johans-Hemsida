@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.2s linear;
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -82,63 +84,6 @@ a:hover {
   transition: all 0.6s ease;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .logo {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    overflow: hidden;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    /* overflow: hidden; */
-  }
-  .nav-links {
-    position: absolute;
-    z-index: 1;
-    right: 0px;
-    height: 92vh;
-    top: 10.3vh;
-    /* background-color: lightgray; */
-    background-color: steelblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    /* transition: transform 0.4s ease-in; */
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .nav-links a {
-    color: pink;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
 @keyframes navLinksFade {
   from {
     opacity: 0;
@@ -162,8 +107,6 @@ a:hover {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* ------------------------------------------------------------------ */
-
 /* ---------------------MAIN STARTS------------------------ */
 
 /* -----------------------MAIN ENDS---------------------- */
@@ -172,6 +115,7 @@ a:hover {
 .section-card {
   padding-top: 5em;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .social-links {
@@ -228,11 +172,9 @@ a:hover {
 
 .card_img_1 {
   height: 230px;
-  /* width: 200px; */
 }
 
 .card_img_2 {
-  /* width: 200px; */
   height: 230px;
 }
 
@@ -245,34 +187,15 @@ a:hover {
 
 /* --------------------------- */
 
-@media screen and (max-width: 800px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .card {
-    background-color: whitesmoke;
-    width: 100%;
-  }
-}
-
 /* -----------------------------------FORM STARTS HERE------------------------------------------------ */
 
 section {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding: 20px;
   width: 100%;
   background: #001923;
+  overflow-x: hidden;
 }
 
 .form-section::before {
@@ -438,6 +361,7 @@ section {
   justify-content: space-evenly;
   min-height: 90vh;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .subtitle-contact-me {
@@ -499,11 +423,6 @@ a:hover {
 }
 
 /* ------------------------- SECTION TEXT CONTAINER ENDS -------------------------------- */
-/* ------------------------------------------------------ */
-
-/* textarea {
-  resize: vertical;
-} */
 
 #status {
   width: 90%;
@@ -540,7 +459,63 @@ a:hover {
   }
 }
 
+/* FORM ENDS HERE */
+/* ------------------------------------------------------ */
+
+/*--------------- MEDIA QUERIES --------------*/
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .logo {
+    overflow: hidden;
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    z-index: 2;
+    left: -100%;
+    height: 90vh;
+    top: 10.2vh;
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* transform: translateX(100%); */
+    /* transition: transform 0.4s ease-in; */
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links a {
+    color: pink;
+  }
+
+  .burger {
+    display: block;
+  }
+
   .form-section::before {
     transform: translate(-200px, -180px);
   }
@@ -557,5 +532,20 @@ a:hover {
   }
 }
 
-/* FORM ENDS HERE */
-/* ------------------------------------------------------ */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    background-color: whitesmoke;
+    width: 100%;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  left: 0;
+}

@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.2s linear;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -94,22 +100,17 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    /* overflow: hidden; */
-  }
   .nav-links {
     position: absolute;
-    right: 0px;
+    left: -100%;
     height: 92vh;
     top: 10.3vh;
-    /* background-color: lightgray; */
     background-color: steelblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     /* transition: transform 0.4s ease-in; */
   }
   .nav-links li {
@@ -126,7 +127,8 @@ a:hover {
 }
 
 .nav-active {
-  transform: translateX(0%);
+  /* transform: translateX(0%); */
+  left: 0;
 }
 
 @keyframes navLinksFade {
@@ -155,7 +157,6 @@ a:hover {
 /* -------------------------main section--------------------- */
 main {
   margin-top: 1em;
-  /* margin: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +165,6 @@ main {
 
 .container {
   position: relative;
-  /* width: 1000px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -172,7 +172,6 @@ main {
   min-height: 55vh;
   background-color: #112128;
   z-index: -1;
-  /* margin-top: 9em; */
 }
 
 .container .card {
