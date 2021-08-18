@@ -170,7 +170,7 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.container .card {
+.container .box {
   position: relative;
   z-index: -1;
   background-color: pink;
@@ -179,17 +179,17 @@ h1 {
   display: flex;
 }
 
-.container .card .imgBx {
+.container .box .imgBx {
   max-width: 900px;
   flex: 0 0 150px;
 }
 
-.container .card .content_offers-lectures {
-  margin-left: 20px;
+.container .box .content_offers-lectures {
+  padding: 0 2rem;
 }
 
-.card_subtext {
-  margin-top: 1rem;
+.box_date {
+  margin-top: 2rem;
   font-style: italic;
   font-weight: bold;
 }
@@ -264,16 +264,16 @@ h1 {
     flex-direction: column;
   }
 
-  .container .card {
+  .container .box {
     flex-direction: column;
     max-width: 350px;
   }
 
-  .container .card .imgBx {
+  .container .box .imgBx {
     max-width: 100%;
   }
 
-  .container .card .content_offers-lectures {
+  .container .box .content_offers-lectures {
     margin-left: 0;
   }
 
@@ -281,7 +281,7 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .container .card .imgBx img {
+  .container .box .imgBx img {
     width: 100%;
   }
 }
@@ -306,6 +306,6 @@ h1 {
 }
 
 .nav-active {
-  transform: translateX(0%);
+  /* transform: translateX(0%); */
   left: 0;
 }
