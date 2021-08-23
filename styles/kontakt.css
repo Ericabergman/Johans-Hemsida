@@ -122,7 +122,8 @@ a:hover {
   margin-top: 2rem;
 }
 
-.fa-facebook-f {
+.fa-facebook-f,
+.fa-portrait {
   color: black;
   background-color: lightskyblue;
   font-size: 25px;
@@ -132,8 +133,9 @@ a:hover {
   height: 45px;
 }
 
-.fa-facebook-f:hover {
-  color: black;
+.fa-facebook-f:hover,
+.fa-portrait:hover {
+  /* color: black; */
   font-size: 30px;
 }
 
@@ -164,6 +166,7 @@ a:hover {
   background-color: #f1f1f1;
   max-width: 300px;
   float: left;
+  border-radius: 1rem;
 }
 
 .title_card {
@@ -288,6 +291,7 @@ section {
   padding: 0 10px;
   z-index: 1;
   color: black;
+  resize: none;
 }
 
 .container .row100 .col .inputBox .text {
