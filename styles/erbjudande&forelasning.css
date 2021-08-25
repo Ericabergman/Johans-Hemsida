@@ -293,6 +293,18 @@ h1 {
   .container .box .imgBx img {
     width: 100%;
   }
+
+  .main-text-offers-lectures {
+    font-size: 1.2rem;
+  }
+
+  .box_personal-characteristics {
+    font-size: 1.2rem;
+  }
+
+  .box_contact-link {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -306,11 +318,23 @@ h1 {
 
   .second-subtitle,
   .third-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .temporary-text {
     font-size: 1.3rem;
+  }
+
+  .main-text-offers-lectures {
+    font-size: 1.2rem;
+  }
+
+  .box_personal-characteristics {
+    font-size: 1.2rem;
+  }
+
+  .box_contact-link {
+    font-size: 1.2rem;
   }
 }
 
