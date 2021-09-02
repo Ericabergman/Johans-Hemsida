@@ -115,7 +115,6 @@ a:hover {
 .section-card {
   padding-top: 5em;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 .social-links {
@@ -198,7 +197,6 @@ section {
   padding: 20px;
   width: 100%;
   background: #001923;
-  overflow-x: hidden;
 }
 
 .form-section::before {
@@ -365,7 +363,6 @@ section {
   justify-content: space-evenly;
   min-height: 90vh;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .subtitle-contact-me {
@@ -550,6 +547,6 @@ a:hover {
 }
 
 .nav-active {
-  transform: translateX(0%);
+  /* transform: translateX(0%); */
   left: 0;
 }
